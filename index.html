@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+
+    <style>
+        body {
+            margin: 0;
+            overflow-x: hidden;
+            font-family: Arial, sans-serif;
+        }
+
+        section {
+            width: 100%;
+            height: 100vh; /* cada página ocupa a tela inteira */
+            padding: 0;
+            margin: 0;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+        }
+
+        #rollButton {
+            position: fixed;
+            bottom: 25px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 14px 28px;
+            background: black;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            z-index: 1000;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+
+    <section id="sec1">
+        <iframe src="assets/HTML/pagina1.html"></iframe>
+    </section>
+
+    <section id="sec2">
+        <iframe src="assets/HTML/pagina2.html"></iframe>
+    </section>
+
+<!--     <section id="sec3">
+        <iframe src="pagina3.html"></iframe>
+    </section> -->
+
+    <button id="rollButton">Continuar ↓</button>
+
+    <script>
+        const pages = ["sec1", "sec2", "sec3"];
+        let currentPage = 0;
+
+        document.getElementById("rollButton").addEventListener("click", () => {
+            currentPage++;
+            if (currentPage >= pages.length) currentPage = 0;
+
+            document.getElementById(pages[currentPage]).scrollIntoView({
+                behavior: "smooth"
+            });
+        });
+    </script>
+
+</body>
+</html>
