@@ -107,7 +107,6 @@ p {
 #caixaPG3_P3 p {
   margin: 0 auto;
   font-size: 1.5rem;
-
   padding-top: 30px;
   padding-bottom: 30px;
   white-space: normal;
@@ -267,8 +266,13 @@ backdrop-filter: blur(6px);
   }
     #caixaPG3_P3 h1 , p{
     margin: 0 auto;      /* Centraliza horizontalmente */
-    text-align: center;  /* Opcional: centraliza conteúdo interno */
+    text-align: left;
+    max-width: 90%;  /* Opcional: centraliza conteúdo interno */
     display: block;      /* Garante que o margin auto funcione */
+  }
+  #caixaPG3_P3 > p {
+    font-size: 1.1rem;
+    max-width: 90%;
   }
 
   

@@ -46,7 +46,7 @@ img {
 
 .hero-content p {
   color: #ccc;
-  text-align: start
+  text-align: start;
 }
 
 .cta {
@@ -106,7 +106,13 @@ img {
   text-decoration: none;
   text-align: center;
 }
+@media(max-width:768px) {
+.hero-content p {
+  color: #ccc;
+  text-align: center;
+}
 
+}
 /* responsive */
 @media(max-width:900px) {
   .hero {

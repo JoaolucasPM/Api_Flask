@@ -149,7 +149,9 @@ p {
     flex-direction: column;
     align-items: center
   }
-
+  #caixaPG2_P2 > p {
+    font-size: 1.2rem;
+  }
   .cardPG2_P2 {
    width: clamp(280px, 28vw, 320px);
   flex: 0 0 clamp(280px, 28vw, 320px); /* todos iguais */
@@ -165,7 +167,7 @@ p {
   
   }
    .contentBoxPG2_P2 h2 {
-  font-size: clamp(1.2rem, 2.5vw, 1.4em);
+    font-size: clamp(1.2rem, 2.5vw, 1.4em);
   letter-spacing: 2px;
   padding-bottom: 10px;
   white-space: nowrap;
@@ -174,6 +176,7 @@ p {
   font-size: 1.3rem;
 }
 .contentBoxPG2_P2 p {
+ 
   padding-top: 20px;
   font-size: 1.2rem;
   justify-content: center;

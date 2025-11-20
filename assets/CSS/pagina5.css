@@ -42,7 +42,7 @@ p {
   text-align: center;
   padding-top: 30px;
   padding-bottom: 80px;
-  width: 70%;
+  width: 100%;
   margin: auto
 }
 
@@ -304,6 +304,19 @@ p {
     padding: 30px;
     overflow-x: hidden;
   }
+  #caixaPG5_P5 > p {
+    font-size: 1rem;
+    text-align: center;
+    max-width: 87%;
+    padding: 0;
+  }
+  #caixaPG5_P5 > h1 {
+    font-size: 1.3rem;
+    text-align: center;
+    max-width: 100%;
+  }
+
+
 
   .a {
     flex-direction: column;

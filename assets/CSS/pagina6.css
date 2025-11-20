@@ -20,7 +20,7 @@ img {
 
 /* mentor title */
 .mentor-title {
-  margin-top: 120px;
+  margin-top: 400px;
   font-size: 4rem;
   color: #d4af37 !important;
   text-align: center;
@@ -171,8 +171,11 @@ img {
 
 @media(max-width:780px) {
   .mentor-title {
-    font-size: 5rem
+    font-size: 5rem;
+      margin-top: 40px;
   }
+  
+  
 
   #img111 {
     display: none
