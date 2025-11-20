@@ -21,7 +21,7 @@ h1 {
 
 p {
 
-  font-size: 1.7rem
+  font-size: 2rem
 }
 /* color background */
 .colorPG4_P4 {
@@ -57,7 +57,7 @@ p {
     margin: auto;
     width: 80%;
     color: #000
-    
+
 }
 
 #caixaPG4_P4 p {
@@ -67,12 +67,12 @@ p {
     padding-top: 30px;
     padding-bottom: 80px;
     width: 70%;
-    margin: auto
+    margin: auto;
 }
 
 /* wrap blocos */
 .wrap-blocos_P4 {
-    max-width: 100%;
+    max-width: 65%;
     margin: 0 auto;
     padding: clamp(15px, 2vw, 20px);
     border-radius: 10px;
@@ -109,10 +109,10 @@ p {
 }
 
 /* responsive */
-@media (max-width:640px) {
+@media (max-width:700px) {
     .wrap-blocos_P4 {
         grid-template-columns: 1fr;
-        width: 90%;
+           max-width: 100%;
         margin: auto
     }
 }
